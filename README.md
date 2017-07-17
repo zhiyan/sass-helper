@@ -1,5 +1,9 @@
 # sassHelper
 
+# 配置
+sass插件的option中增加如下字段:
+includePaths: require('sass-helper').includePaths
+
 ### 颜色变量
 
 * $main-color: 易鑫logo红，网站主色
