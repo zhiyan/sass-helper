@@ -1,14 +1,13 @@
 {
-  "name": "sassHelper",
+  "name": "sass-helper",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.daikuan.com:npm/sassHelper.git"
+    "url": "git@gitlab.daikuan.com:npm/sass-helper.git"
   },
   "author": "",
   "license": "ISC",
