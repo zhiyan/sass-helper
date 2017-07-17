@@ -4,8 +4,7 @@ const PATH_NODE_MODULES = path.join(process.cwd(), 'node_modules')
 
 module.exports = {
 	includePaths:  require('bourbon').includePaths.concat([
-		PATH_NODE_MODULES,
 		path.join(PATH_NODE_MODULES, 'normalize.css/'),
-		path.join(PATH_NODE_MODULES, 'sassHelper/')
+		path.join(PATH_NODE_MODULES, 'sass-helper/')
 	])
 }
