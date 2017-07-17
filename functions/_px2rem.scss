@@ -1,0 +1,8 @@
+/// px => rem
+/// @function 
+/// @param	{String} $px 像素
+/// @param	{String} $base 默认75(设计图尺寸750, ip6s)
+/// @description	淘宝flexible方案
+@function px2rem($px, $base: 75) {
+  @return (strip-units($px) / $base) * 1rem;
+}

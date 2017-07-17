@@ -1,0 +1,98 @@
+// background color
+$bg: (
+	white: #fff,
+	normal: #f8f8f8
+);
+
+$border: (
+	s: 1px,
+	m: 2px,
+	l: 3px,
+	normal: #eee,
+	dark: #ccc
+);
+
+$colors: (
+	gold: #DBB76C,
+	red: #E9474D
+);
+
+// line height
+$line: (
+	s: 1.0,
+	m:1.6,
+	l:1.8,
+	xl:2
+);
+
+// font for pc
+$font: (
+
+	// size
+	s: 12px, 
+	m: 14px, 
+	l: 16px,
+	xl: 18px,
+	xxl:20px,
+
+	// color
+	white: #fff,
+	light: #999,
+	normal: #666,
+	dark: #333,
+	black: #000,
+	important: #dd2727
+);
+
+// font for mobile
+$mfont: (
+
+	// size
+	s: 24px,
+	m: 28px,
+	l: 32px,
+	xl: 36px,
+	xxl:40px,
+
+	// color
+	white: #fff,
+	light: #999,
+	normal: #666,
+	dark: #333,
+	black: #000,
+	important: #dd2727
+);
+
+
+// 主色，辅助色
+$main-color: #E9474D !default;
+$sub-color: #5A67AE !default;
+
+// 文本颜色级别
+$black-color:#000 !default;
+$dark-color:#394043 !default;
+$normal-color:#686868 !default;
+$light-color:#9C9FA1 !default;
+$lighter-color: #C4C4C4 !default;
+$lightest-color: #D0D0D0 !default;
+$white-color:#fff !default;
+
+// 功能色
+$success-color: #57B553 !default;
+$warn-color: #FF8C39 !default;
+$error-color: #E9474D !default;
+$background-color: #F5F5F5 !default;
+$disabled-color: #C4C4C4 !default;
+$placeholder-color:#b2b2b2 !default;
+$warn-background-color: #FFF4EA !default;
+$icon-color: #5A67AE !default;
+$mask-background-color: rgba(0,0,0,.6) !default;
+
+// 布局
+$main-line-height: 1.5 !default;
+$main-border-radius: 5px !default;
+$sub-border-radius: 3px !default;
+$mask-opacity:.6 !default;
+
+// 文字
+$title-font-size: 36px !default;

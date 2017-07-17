@@ -1,0 +1,44 @@
+@mixin border($color: #E5E5E5, $border: 1px, $side: null, $type: solid){
+	@if $side{
+		border-#{$side}: #{strip-units($border)}px $type $color;
+	}@else{
+    border: #{strip-units($border)}px $type $color;
+	}
+	// [data-dpr="1"] & {
+	// 	@if $side{
+	// 		border-#{$side}: #{strip-units($border)/2}px $type $color;
+	// 	}@else{
+	//     border: #{strip-units($border)/2}px $type $color;
+	// 	}
+ //  }
+ //  [data-dpr="2"] & {
+ //    @if $side{
+	// 		border-#{$side}: #{strip-units($border)}px $type $color;
+	// 	}@else{
+	//     border: #{strip-units($border)}px $type $color;
+	// 	}
+ //  }
+ //  [data-dpr="3"] & {
+ //    @if $side{
+	// 		border-#{$side}: #{strip-units($border)/2*3}px $type $color;
+	// 	}@else{
+	//     border: #{strip-units($border)/2*3}px $type $color;
+	// 	}
+ //  }
+}
+
+@mixin borderLeft($color:#E5E5E5, $border: 1px, $type: solid){
+	@include border($color, $border, left, $type);
+}
+
+@mixin borderRight($color:#E5E5E5, $border: 1px, $type: solid){
+	@include border($color, $border, right, $type);
+}
+
+@mixin borderTop($color:#E5E5E5, $border: 1px, $type: solid){
+	@include border($color, $border, top, $type);
+}
+
+@mixin borderBottom($color:#E5E5E5, $border: 1px, $type: solid){
+	@include border($color, $border, bottom, $type);
+}

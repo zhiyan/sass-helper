@@ -11,5 +11,8 @@
     "url": "git@gitlab.daikuan.com:npm/sassHelper.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bourbon": "^4.3.4"
+  }
 }
