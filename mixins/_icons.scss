@@ -294,6 +294,7 @@ $icons: (
 );
 
 @mixin icons($key, $layout: true){
+	background: url(map-deep-get($icons, $key, url)) no-repeat left top;
 	@if $layout == true {
 		content:' ';
 		vertical-align:middle;
@@ -304,5 +305,4 @@ $icons: (
 	} @else {
 		background-size: px2rem(map-deep-get($icons, $key, width)) px2rem(map-deep-get($icons, $key, height));
 	}
-	background: url(map-deep-get($icons, $key, url)) no-repeat left top;
 }
