@@ -301,7 +301,7 @@ $icons: (
 		display: inline-block;
 		width: px2rem(map-deep-get($icons, $key, width));
 		height: px2rem(map-deep-get($icons, $key, height));
-		background-size: contain !important;
+		background-size: contain;
 	} @else {
 		background-size: px2rem(map-deep-get($icons, $key, width)) px2rem(map-deep-get($icons, $key, height));
 	}
