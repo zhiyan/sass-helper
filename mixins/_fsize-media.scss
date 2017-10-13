@@ -1,0 +1,18 @@
+/// 淘宝flexible方案的font size设置
+/// @param {String}	$size font尺寸
+/// @description	android dpr为1
+@mixin fsize($size:24,$pri:null){
+	[data-dpr="1"] & {
+	  font-size: #{strip-units($size)/2}px $pri;
+	}
+	[data-dpr="2"] & {
+	  font-size: #{strip-units($size)}px $pri;
+	}
+	[data-dpr="3"] & {
+	  font-size: #{strip-units($size)/2*3}px $pri;
+	}
+
+	@media screen and (max-width: 640px){
+		font-size: px2rem(strip-units($size)) !important;
+  }
+}
