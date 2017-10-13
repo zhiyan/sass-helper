@@ -73,6 +73,7 @@ $taoche: (
 // 主色，辅助色
 $main-color: #E9474D !default;
 $sub-color: #5A67AE !default;
+$taoche: #FF6402 !default;
 
 // 文本颜色级别
 $black-color:#000 !default;
@@ -84,15 +85,18 @@ $lightest-color: #D0D0D0 !default;
 $white-color:#fff !default;
 
 // 功能色
+$background: #F8F8F8 !default;
 $success-color: #57B553 !default;
 $warn-color: #FF8C39 !default;
 $error-color: #E9474D !default;
+$important-color: #FF2D4F !default;
 $background-color: #F5F5F5 !default;
-$disabled-color: #C4C4C4 !default;
+$disabled-color: #D6D6D6 !default;
 $placeholder-color:#b2b2b2 !default;
 $warn-background-color: #FFF4EA !default;
 $icon-color: #5A67AE !default;
 $mask-background-color: rgba(0,0,0,.6) !default;
+$nav-background-color: #D6D6D6 !default;
 
 // 布局
 $main-line-height: 1.5 !default;
