@@ -79,3 +79,43 @@
 		}
 	}
 }
+
+
+@mixin button($type:normal){
+	border-radius:3px;
+	text-decoration: none;
+	text-align: center;
+
+	@if $type == normal {
+		background: $main-color;
+		color:#fff;
+
+		&:hover{
+			color:#fff;
+			background: #F35B09;
+		}
+
+		&:active{
+			color:#fff;
+			background: #F35B09;
+		}
+	}@elseif $type == disabled {
+		background: #e5e5e5;
+		color:#fff;
+	}@elseif $type == hollow {
+		background: #fff;
+		color:$main-color;
+		border:1px solid $main-color;
+		box-sizing:border-box;
+
+		&:hover{
+			color:$main-color;
+			background: #f8f8f8;
+		}
+
+		&:active{
+			color:$main-color;
+			background: #f8f8f8;
+		}
+	}
+}
