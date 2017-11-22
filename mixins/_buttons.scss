@@ -80,6 +80,21 @@
 	}
 }
 
+%disabled-button{
+	&, &:hover, &:active{
+		background-color: #e5e5e5;
+		color:#fff;
+	}
+}
+
+%disabled-button-hollow{
+	&, &:hover, &:active{
+		background-color: #fff;
+		color:#ACAFB0;
+		border: 1px solid #E9E9E9;
+	}
+}
+
 
 @mixin button($type:normal){
 	border-radius:3px;
@@ -90,32 +105,31 @@
 		background-color: $main-color;
 		color:#fff;
 
-		&:hover{
+		&:hover, &:active{
 			color:#fff;
 			background-color: #F35B09;
 		}
 
-		&:active{
-			color:#fff;
-			background-color: #F35B09;
+		&.disabled{
+			@extend %disabled-button;
 		}
 	}@elseif $type == disabled {
-		background-color: #e5e5e5;
-		color:#fff;
+		@extend %disabled-button;
+	}@elseif $type == hollow-disabled{
+		@extend %disabled-button-hollow;
 	}@elseif $type == hollow {
 		background-color: #fff;
 		color:$main-color;
 		border:1px solid $main-color;
 		box-sizing:border-box;
 
-		&:hover{
+		&:hover, &:active{
 			color:$main-color;
 			background-color: #f8f8f8;
 		}
 
-		&:active{
-			color:$main-color;
-			background-color: #f8f8f8;
+		&.disabled{
+			@extend %disabled-button-hollow;
 		}
 	}
 }
