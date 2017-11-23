@@ -84,6 +84,7 @@
 	&, &:hover, &:active{
 		background-color: #e5e5e5;
 		color:#fff;
+		cursor:default;
 	}
 }
 
@@ -100,6 +101,7 @@
 	border-radius:3px;
 	text-decoration: none;
 	text-align: center;
+	cursor:pointer;
 
 	@if $type == normal {
 		background-color: $main-color;
