@@ -105,11 +105,13 @@
 
 	@if $type == normal {
 		background-color: $main-color;
+		border:1px solid $main-color;
 		color:#fff;
-
+		
 		&:hover, &:active{
 			color:#fff;
 			background-color: #F35B09;
+			border:1px solid #F35B09;
 		}
 
 		&.disabled{
@@ -127,7 +129,7 @@
 
 		&:hover, &:active{
 			color:$main-color;
-			background-color: #f8f8f8;
+			background-color: $warn-background-color;
 		}
 
 		&.disabled{
