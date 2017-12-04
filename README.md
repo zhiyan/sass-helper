@@ -4,6 +4,15 @@
 sass插件的option中增加如下字段:
 includePaths: require('sass-helper').includePaths
 
+### sass-helper贡献代码
+1. 本地开发完成,commit && push
+2. 生成新的tag: `npm version patch|minor|major` 分别对应生成修订版本号更新，小版本号更新，大版本号更新
+3. 将tag push到远端: git push --tags
+
+### 项目引用
+package.json:
+"sass-helper": "git+http://gitlab.dev.daikuan.com/npm/sass-helper.git#v2.2.0", 需要跟tag号
+
 ### 颜色变量
 
 * $main-color: 易鑫logo红，网站主色
